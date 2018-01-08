@@ -35,3 +35,10 @@ def biggest_int(integers):
         if int>record:
             record=int
     return record
+	
+def smallest_int(integers):
+	record = 0 ;
+	for int in integers:
+		if int < record:
+			record = int
+	return record
