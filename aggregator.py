@@ -1,3 +1,4 @@
+import sys
 def areas(widths):
     areas=[]
     for width in widths:
@@ -30,14 +31,14 @@ def longest_word(phrase):
     return record
 
 def biggest_int(integers):
-    record=0
+    record = -sys.maxsize
     for int in integers:
         if int>record:
             record=int
     return record
 	
 def smallest_int(integers):
-	record = 0 ;
+	record = sys.maxsize
 	for int in integers:
 		if int < record:
 			record = int
